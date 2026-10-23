@@ -104,7 +104,7 @@ h1 {
 .img1 {
   text-align: right;
   margin-top: 50px;
-  margin-left: 700px;
+  margin-left: 720px;
 }
 
 .hero {
@@ -133,6 +133,8 @@ h1 {
   color: #aaa;
   font-size: 20px;
   line-height: 1.4;
+  margin-top: -500px;
+  margin-left: 150px;
 }
 
 .hero__text button {
