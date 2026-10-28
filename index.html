@@ -1,89 +1,121 @@
+
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>figma</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img class="img__logo" src="./logo 2.svg" alt="" />
-        <ul class="nav__ul">
-          <li class="nav__list">
-            <a class="nav__anchor" href="#">home</a>
-          </li>
-          <li>
-            <a class="nav__anchor" href="">NFT Market</a>
-          </li>
-          <li>
-            <a class="nav__anchor" href="#">Shop</a>
-          </li>
-          <li>
-            <a class="nav__anchor" href="#">About Us</a>
-          </li>
-        </ul>
-        <button class="nav__btn">Explore Now</button>
-      </nav>
-    </header>
-    <section>
-      <div class="container">
-        <div class="card-left">
-          <div class="card">
-            <h1 class="hero__title">
-              Explore The Largest
-              <span
-                style="
-                  background: linear-gradient(
-                    123.38deg,
-                    #351a88 21.26%,
-                    #ff6654 58.34%
-                  );
-                  background-clip: text;
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                "
-                >NFT</span
-              >
-              Marketplaces
-            </h1>
-            <p class="hero__text1">Buy, Sell & Trade Cryptocurrency Easily and Securely</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>NFT Marketplace</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#">
+        <img class="img__logo" src="./logo 2.svg" alt="NFT logo">
+      </a>
+
+      <ul class="nav__ul">
+        <li class="nav__list"><a class="nav__anchor active" href="#">Home</a></li>
+        <li><a class="nav__anchor" href="#market">NFT Market</a></li>
+        <li><a class="nav__anchor" href="#shop">Shop</a></li>
+        <li><a class="nav__anchor" href="#about">About Us</a></li>
+      </ul>
+
+      <button class="nav__btn">Explore Now <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container hero-section">
+      <div class="card-left">
+        <div class="card">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Discover the future of digital art</span>
+          <h1 class="hero__title">
+            Explore The Largest
+            <span class="gradient-text">NFT</span>
+            Marketplaces
+          </h1>
+          <p class="hero__text1">Buy, Sell &amp; Trade Cryptocurrency Easily and Securely</p>
+          <div class="hero__actions">
+            <button class="section__btn">Connect Wallet <span>↗</span></button>
+            <button class="section__btn1">Learn More <span>→</span></button>
+          </div>
+
+          <div class="about" id="about">
             <div>
-              <button class="section__btn">Connect Wallet</button>
-              <button class="section__btn1">Learn More</button>
+              <p class="members-title">Our Members</p>
+              <p class="members-caption">Join our growing community</p>
             </div>
-          </div>
-          <div class="about">
-            <p>Our Members</p>
-            <img src="./avatars.svg" alt="Avatar"> />
+            <img src="./avatars.svg" alt="Our members">
           </div>
         </div>
-        <div class="card-right">
-          <img src="./hero img (1).png" alt="" />
-        </div>
+      </div>
+
+      <div class="card-right">
+        <div class="hero-glow"></div>
+        <img src="./hero img (1).png" alt="Featured NFT artwork">
+        <div class="floating-tag"><span class="online-dot"></span> Trending NFT</div>
       </div>
     </section>
-    <section>
-      <div class="secure-div">
-        <h1>Secure & Private</h1>
-        <p>24/7 Decated Support Team</p>
-        <div class="cards">
-          <img class="card_img" src="./card 1 (1).png" alt="">
-          <img class="card_img" src="./card 2.png" alt="">
-          <img class="card_img" src="card 3.png" alt="">
-        </div>
+
+    <section class="secure-div" id="market">
+      <div class="section-heading">
+        <span class="eyebrow">WHY CHOOSE US</span>
+        <h2>Secure <span class="gradient-text">&amp; Private</span></h2>
+        <p>Everything you need for a seamless NFT experience</p>
       </div>
-      <div class="card-wrapper">
-        <div class="hero">
-        <img class="content" src="./content.png" alt="">
-        </div>
-      <div>
-        <img class="card-same" src="./bg same 1 — копия.png" alt="">
-      </div>
+
+      <div class="cards">
+        <article class="feature-card">
+          <div class="feature-icon">◇</div>
+          <div>
+            <h3>Secure Transactions</h3>
+            <p>Your assets stay protected</p>
+          </div>
+          <span class="feature-arrow">↗</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">ϟ</div>
+          <div>
+            <h3>Fast Transactions</h3>
+            <p>Trade without the wait</p>
+          </div>
+          <span class="feature-arrow">↗</span>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">◉</div>
+          <div>
+            <h3>24/7 Support</h3>
+            <p>We are here when you need us</p>
+          </div>
+          <span class="feature-arrow">↗</span>
+        </article>
       </div>
     </section>
-    <div>
-    </div>
-  </body>
+
+    <section class="card-wrapper" id="shop">
+      <div class="content-box">
+        <span class="eyebrow">EXPLORE WITHOUT LIMITS</span>
+        <h2>Discover a new world of <span class="gradient-text">digital art.</span></h2>
+        <p>Find unique collections, explore creative artists, and make your next digital discovery.</p>
+        <button class="section__btn">Explore Collection <span>↗</span></button>
+      </div>
+
+      <div class="artwork-box">
+        <img class="content" src="./content.png" alt="Digital artwork">
+        <img class="card-same" src="./bg same 1 — копия.png" alt="NFT collection artwork">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="./logo 2.svg" alt="NFT logo">
+    <p>Explore the future of digital collectibles.</p>
+    <span>© 2026 NFT Marketplace</span>
+  </footer>
+</body>
 </html>
