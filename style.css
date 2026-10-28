@@ -5,13 +5,13 @@
 }
 
 body {
-  background:#100a22;
+  background: #100a22;
   color: white;
 }
 
 header {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 nav {
@@ -40,14 +40,14 @@ a {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-    margin-top: 100px;
-    padding-left: 50px;
-    color: white;
+  margin-top: 100px;
+  padding-left: 50px;
+  color: white;
 }
 
 .nav__btn {
@@ -65,12 +65,14 @@ a {
 }
 
 .section__btn1 {
-  background-color: #351A88;
   color: white;
   width: 113px;
   padding: 10px;
+  border: 2px solid;
+  border-image-source: radial-gradient(125.11% 877.9% at 84.48% 26.46%, #3C6DD9 0%, #FF888F 85.94%);
+  background: inherit;
 }
-  
+
 .about {
   display: flex;
   justify-content: space-evenly;
@@ -95,9 +97,14 @@ h1 {
   text-align: center;
 }
 
+.secure-div {
+  width: 83%;
+  margin: 0 auto;
+}
+
 .cards {
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
   gap: 20px;
 }
 
@@ -138,9 +145,46 @@ h1 {
 }
 
 .hero__text button {
-    background: transparent;
-    color: white;
-    border: 1px solid #6c20e8;
-    padding: 10px 20px;
-    font-size: 16px;
+  background: transparent;
+  color: white;
+  border: 1px solid #6c20e8;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.hero__title {
+
+  font-family: Roboto;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 64px;
+  leading-trim: NONE;
+  line-height: 82.5px;
+  letter-spacing: 0%;
+
+}
+
+.hero__text1 {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 34.8px;
+  letter-spacing: 0%;
+  color: rgba(165, 163, 168, 1);
+
+}
+
+.content {
+  width: 500px;
+  margin: 100px;
+}
+
+.card-same {
+  margin: 100px;
 }
